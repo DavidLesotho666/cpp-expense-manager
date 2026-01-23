@@ -1,117 +1,255 @@
-Expense Tracker Application (C++)
+# Expense Tracker Application (C++)
 
 A robust, console-based personal finance management tool designed to help users track, categorize, and analyze their spending habits. This project demonstrates high-level C++ programming concepts including Object-Oriented Design, file I/O, and the use of the Standard Template Library (STL).
 
-🚀 Features
+---
 
-Persistent Storage: Expenses are automatically saved to and loaded from a local text file (expenses.txt).
+## Features
 
-Full CRUD Operations: Add new expenses with date, amount, category, and description.
+* **Persistent Storage:** Expenses are automatically saved to and loaded from a local text file (expenses.txt).
 
-Advanced Filtering:
+* **Full CRUD Operations:** Add new expenses with date, amount, category, and description.
 
-Filter by specific categories (e.g., Food, Travel).
+* **Advanced Filtering:**
 
-Filter by custom date ranges (YYYY-MM-DD).
+  * Filter by specific categories (e.g., Food, Travel).
 
-Search Functionality: Keyword search across expense descriptions.
+  * Filter by custom date ranges (YYYY-MM-DD).
 
-Financial Analytics:
+* **Search Functionality:** Keyword search across expense descriptions.
 
-Real-time calculation of total expenditures.
+* **Financial Analytics:**
 
-Automatic grouping and sub-totaling by category.
+  * Real-time calculation of total expenditures.
 
-Data Validation: Strict date format checking and numeric amount verification.
+  * Automatic grouping and sub-totaling by category.
 
-📂 Folder Structure
+* **Data Validation:** Strict date format checking and numeric amount verification.
 
-expense-tracker/
-├── main.cpp          # Unified source code (Main, Logic, Models)
-├── expenses.txt      # Data file (Auto-generated on first run)
-├── README.md         # Project documentation
-└── instructions.md   # Compilation and setup guide
+---
 
+## Folder Structure
 
-🧠 System Architecture
+```
+  expense-tracker/
+  │
+  ├── main.cpp          # Unified source code (Main, Logic, Models)
+  ├── README.md         # Project documentation (very important)
+  ├── .gitignore        # C++ gitignore file
+  ├── LICENSE           # MIT License file
+  └── expenses.txt      # (Optional) Auto-generated on first run — DO NOT upload
+  
+```
 
-Main Classes & Components
+---
 
-Expense (Struct): The data model containing attributes for date, amount, category, and description. It includes methods for serialization to store data in a flat-file format.
+## System Architecture
 
-ExpenseManager (Class): The heart of the application. It handles the vector of expenses, performs all filtering logic, and manages the stream-based file operations.
+### Main Classes & Components
 
-Utils (Static Class): Contains helper functions for date validation using substring parsing and currency formatting using string streams.
+* **Expense (Struct):** The data model containing attributes for date, amount, category, and description. It includes methods for serialization to store data in a flat-file format.
 
-Logic Flow
+* **ExpenseManager (Class):** The heart of the application. It handles the vector of expenses, performs all filtering logic, and manages the stream-based file operations.
 
-Initialization: On startup, ExpenseManager reads expenses.txt and populates an internal std::vector<Expense>.
+* **Utils (Static Class):** Contains helper functions for date validation using substring parsing and currency formatting using string streams.
 
-User Interaction: A do-while loop in main() captures user input via a numbered menu.
+---
 
-Processing: Depending on the selection, the manager either appends to the vector (Save) or iterates through it with conditional logic (Filter/Search).
+## Logic Flow
 
-Finalization: Any change to the list triggers an automatic saveToFile() call to ensure data integrity before the program terminates.
+* **Initialization:** On startup, ExpenseManager reads expenses.txt and populates an internal std::vector<Expense>.
 
-🛠️ Setup and Installation
+* **User Interaction:** A do-while loop in main() captures user input via a numbered menu.
+
+* **Processing:** Depending on the selection, the manager either appends to the vector (Save) or iterates through it with conditional logic (Filter/Search).
+
+* **Finalization:** Any change to the list triggers an automatic saveToFile() call to ensure data integrity before the program terminates.
+
+---
+
+## Setup and Installation
 
 To compile this project, ensure you have a C++17 compatible compiler.
 
-# Compile
+### Compile
+
+```
 g++ -std=c++17 main.cpp -o ExpenseTracker
+```
 
-# Run
+### Run
+
+```
 ./ExpenseTracker
+```
 
+---
 
-For detailed instructions on Windows or macOS, please refer to instructions.md.
+## Detailed Build & Run Instructions (For Grading & Testing)
 
-📖 Usage Examples
+These instructions are written for instructors and graders who will clone and run this project directly from GitHub.
 
-Action
+---
 
-Input Example
+### Step 1: Clone the Repository from GitHub
 
-Add Expense
+Open a terminal and run:
 
-2023-12-01, 1200.00, Rent, Monthly Apartment Rent
+```
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd expense-tracker
+```
 
-Filter Date
+Example:
 
-2023-01-01 to 2023-12-31
+```
+git clone https://github.com/username/expense-tracker.git
+cd expense-tracker
+```
 
-Search
+---
 
-Pizza (Returns all descriptions containing "pizza")
+### Step 2: Verify C++ Compiler Installation
 
-📸 Sample Screenshots
+Ensure a C++ compiler (g++) is installed.
 
-(Placeholders - In a real GitHub repo, you would upload images here)
+Check version:
 
-[Screenshot: Main Menu Interface]
+```
+g++ --version
+```
 
-[Screenshot: Expense Summary Table]
+If not installed:
 
-[Screenshot: Category-wise Breakdown]
+* **Windows:** Install MinGW or use Visual Studio with C++ workload
 
-⚠️ Limitations
+* **Linux (Ubuntu/Debian):**
 
-Console Only: No Graphical User Interface (GUI).
+```
+sudo apt install g++
+```
 
-Single User: Designed for a single user/local file access.
+* **macOS (Xcode Command Line Tools):**
 
-Simple Validation: Does not account for leap years in the simplified date validation logic.
+```
+xcode-select --install
+```
 
-🔮 Future Improvements
+---
 
-[ ] Implement a GUI using Qt or wxWidgets.
+### Step 3: Compile the Program
 
-[ ] Add the ability to export reports to CSV or PDF format.
+From inside the project folder, run:
 
-[ ] Integrate a database (SQLite) for handling larger datasets.
+```
+g++ -std=c++17 main.cpp -o ExpenseTracker
+```
 
-[ ] Add password protection/encryption for stored data.
+This will generate an executable file named:
 
-Author: [Your Name/GitHub Profile]
+* ExpenseTracker (Linux / macOS)
 
-Academic Mentor: Senior C++ Engineer Lead
+* ExpenseTracker.exe (Windows)
+
+---
+
+### Step 4: Run the Program
+
+* **Linux / macOS:**
+
+```
+./ExpenseTracker
+```
+
+* **Windows (Command Prompt / PowerShell):**
+
+```
+ExpenseTracker.exe
+```
+
+---
+
+### Step 5: Using the Application
+
+* After running, the main menu will appear
+
+* Enter a number (0–6) to select an option
+
+* Follow on-screen prompts to add, filter, search, or summarize expenses
+
+* On first run:
+
+  * The file expenses.txt will be automatically created
+
+  * All future expenses will be saved and loaded from this file
+
+---
+
+### Step 6: Cleaning & Rebuilding (Optional)
+
+If recompilation is needed:
+
+```
+rm ExpenseTracker
+g++ -std=c++17 main.cpp -o ExpenseTracker
+```
+
+---
+
+### Troubleshooting
+
+* **Command not found: g++**
+  Install a C++ compiler (see Step 2)
+
+* **Permission denied (Linux/macOS)**
+
+```
+chmod +x ExpenseTracker
+./ExpenseTracker
+```
+
+* **No expenses showing**
+  Ensure expenses.txt is in the same directory as the executable
+
+---
+
+## Usage Examples
+
+* **Add Expense**
+  Input Example: 2023-12-01, 1200.00, Rent, Monthly Apartment Rent
+
+* **Filter Date**
+  Input Example: 2023-01-01 to 2023-12-31
+
+* **Search**
+  Input Example: Pizza (Returns all descriptions containing "pizza")
+
+---
+
+## Limitations
+
+* Console Only: No Graphical User Interface (GUI).
+
+* Single User: Designed for a single user/local file access.
+
+* Simple Validation: Does not account for leap years in the simplified date validation logic.
+
+---
+
+## Future Improvements
+
+* [ ] Implement a GUI using Qt or wxWidgets.
+
+* [ ] Add the ability to export reports to CSV or PDF format.
+
+* [ ] Integrate a database (SQLite) for handling larger datasets.
+
+* [ ] Add password protection/encryption for stored data.
+
+---
+
+## Author & Credits
+
+* Author: [Your Name / GitHub Profile]
+
+* Academic Mentor: Senior C++ Engineer Lead
