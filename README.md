@@ -248,8 +248,4 @@ chmod +x ExpenseTracker
 
 ---
 
-## Author & Credits
 
-* Author: [Your Name / GitHub Profile]
-
-* Academic Mentor: Senior C++ Engineer Lead
