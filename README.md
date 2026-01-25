@@ -1,3 +1,36 @@
+# Python Expense Tracker
+
+## What We Did
+We built a lightweight, interactive Command-Line Interface (CLI) application that allows users to manage their personal finances. 
+
+The application enables users to:
+* *Log new expenses* (Date, Amount, Category, Description).
+* *View expense history* dynamically.
+* *Filter expenses* by specific categories (e.g., "Food", "Transport") or date ranges.
+* *Generate a summary* of total spending overall and broken down by category.
+
+## How We Did It (Python Features)
+This application was designed to showcase Python's strengths in rapid development, readability, and high-level data manipulation.
+
+* *Data Structures:* We used a *list of dictionaries* ([{...}, {...}]) to represent the expenses. This demonstrates Python's flexibility, as we did not need to pre-define strict classes for the data.
+* *Memory Management:* Leveraging Python’s *Garbage Collector*, we focused on application logic rather than manual memory allocation.
+* *Data Persistence:* We utilized Python's built-in json library to save and load expenses to a local file (expenses.json), ensuring data is not lost when the program closes.
+* *Filtering & Searching:* We used *List Comprehensions* to perform fast, single-line data filtering (e.g., [e for e in expenses if e['category'] == target]).
+* *Date Handling:* The datetime module was used to parse user date inputs and validate date ranges.
+
+## 🛠️ Prerequisites
+* *Python 3.x* installed on your machine.
+* No external third-party libraries (like pip install) are required. We strictly used Python's standard library.
+
+## How to Run the Program
+
+1. *Clone or download* the repository to your local machine.
+2. *Open your terminal* (or Command Prompt) and navigate to the project folder:
+   ```bash
+   cd path/to/python_implementation
+
+
+
 # Expense Tracker Application (C++)
 
 A robust, console-based personal finance management tool designed to help users track, categorize, and analyze their spending habits. This project demonstrates high-level C++ programming concepts including Object-Oriented Design, file I/O, and the use of the Standard Template Library (STL).
